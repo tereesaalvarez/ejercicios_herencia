@@ -14,10 +14,11 @@ Herencia simple. Diagrama UML:
 # Ejercicio 2:
 Respuesta del ejercicio:
 
-![Diagrama_herencias2](https://user-images.githubusercontent.com/100090620/159311222-0df3547f-77ef-4b3c-8284-0bf94d0d39d8.jpg)
+![Herencias_2](https://user-images.githubusercontent.com/100090620/159312560-d84049af-e678-4e0c-a0fe-959c94b8c80f.PNG)
 
 
 # Ejercicio 3:
 
-![Diagrama_herencias3](https://user-images.githubusercontent.com/100090620/159311291-ee69efcc-3370-4dfe-8218-df6bac8e5d70.jpg)
+
+![Herencias_3](https://user-images.githubusercontent.com/100090620/159312608-78295d34-df70-46a7-8033-39e5639dc534.PNG)
 
