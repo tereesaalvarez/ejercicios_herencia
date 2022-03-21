@@ -9,7 +9,25 @@ Herencia simple. Diagrama UML:
 
 ![Herencias_1](https://user-images.githubusercontent.com/100090620/159312235-d56fced3-02bd-46e7-944a-877e7dd1e653.PNG)
 
+```class Punto2D:
+    def __init__(self, x, y):
+        self.x= x
+        self.y= y
+        
+    def translacion(self, a, b):
+        self.x = self.x + a
+        self.y = self.y + b
+        
 
+class Punto3D(Punto2D):
+    def __init__(self, x, y, z):
+        Punto2D.__init__(self, x, y)
+        self.z = z
+
+    def translacion2(self, a, b, c):
+        self.x = self.x + a
+        self.y = self.y + b
+        self.z = self.z + c´´
 
 # Ejercicio 2:
 Respuesta del ejercicio:
@@ -59,7 +77,10 @@ c
 
 # Ejercicio 3:
 
-#Importamos la libreria funciones
+
+![Herencias_3](https://user-images.githubusercontent.com/100090620/159312608-78295d34-df70-46a7-8033-39e5639dc534.PNG)
+
+```#Importamos la libreria funciones
 import funciones
 #Definimos el main
 if __name__ == "__main__":
@@ -84,8 +105,4 @@ class C(A):
 class D(B, C):
     def __init__(self, a, b, c):
         B.__init__(self, a, b)
-        C.__init__(self, a, c)
-
-
-![Herencias_3](https://user-images.githubusercontent.com/100090620/159312608-78295d34-df70-46a7-8033-39e5639dc534.PNG)
-
+        C.__init__(self, a, c)´´´
