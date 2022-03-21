@@ -9,25 +9,27 @@ Herencia simple. Diagrama UML:
 
 ![Herencias_1](https://user-images.githubusercontent.com/100090620/159312235-d56fced3-02bd-46e7-944a-877e7dd1e653.PNG)
 
-```class Punto2D:
-    def __init__(self, x, y):
-        self.x= x
-        self.y= y
+    class Punto2D:
+        def __init__(self, x, y):
+            self.x= x
+            self.y= y
         
-    def translacion(self, a, b):
-        self.x = self.x + a
-        self.y = self.y + b
+        def translacion(self, a, b):
+            self.x = self.x + a
+            self.y = self.y + b
         
 
-class Punto3D(Punto2D):
-    def __init__(self, x, y, z):
-        Punto2D.__init__(self, x, y)
-        self.z = z
+    class Punto3D(Punto2D):
+        def __init__(self, x, y, z):
+            Punto2D.__init__(self, x, y)
+            self.z = z
 
-    def translacion2(self, a, b, c):
-        self.x = self.x + a
-        self.y = self.y + b
-        self.z = self.z + c´´
+        def translacion2(self, a, b, c):
+            self.x = self.x + a
+            self.y = self.y + b
+            self.z = self.z + c 
+        
+
 
 # Ejercicio 2:
 Respuesta del ejercicio:
@@ -37,72 +39,47 @@ Respuesta del ejercicio:
 El codigo es el siguiente:
 
 ```
-#Empezamos a definir las clases y definimos los constructores para A, B y C
-class Base: 
-    def __init__(self): 
-        self.a = "a" 
-        self.b = "b" 
-        self.c = "c" 
-    def A(self): 
-        print(self.a) 
+    #Empezamos a definir las clases y definimos los constructores para A, B y C
+    class Base: 
+        def __init__(self): 
+            self.a = "a" 
+            self.b = "b" 
+            self.c = "c" 
+        def A(self): 
+            print(self.a) 
  
-    def B(self): 
-        print(self.b) 
+        def B(self): 
+            print(self.b) 
  
-    def C(self): 
-        print(self.c) 
+        def C(self): 
+            print(self.c) 
 
-#Una vez definida la clase Base, definimos la clase que deriva de dicha base igual que la anterior, haciendo uso de las herencias
-class Derivada(Base): 
-    def __init__(self): 
-        self.a = "aa" 
-        super().__init__() 
-        self.c = "cc" 
-    def A(self): 
-        print(self.a) 
-    def B(self): 
-        self.b = "bb" 
-        super().B() 
-        print(self.b) 
-#El resultado es el siguiente:
-a
-b
-bb
-bb
-c
-cc
-c
-´´´
+    #Una vez definida la clase Base, definimos la clase que deriva de dicha base igual que la anterior, haciendo uso de las herencias
+    class Derivada(Base): 
+        def __init__(self): 
+            self.a = "aa" 
+            super().__init__() 
+            self.c = "cc" 
+        def A(self): 
+            print(self.a) 
+        def B(self): 
+            self.b = "bb" 
+            super().B() 
+            print(self.b) 
+    #El resultado es el siguiente:
+        a
+        b
+        bb
+        bb
+        c
+        cc
+        c
+
+```
 
 
-# Ejercicio 3:
+#Ejercicio 3:
 
 
 ![Herencias_3](https://user-images.githubusercontent.com/100090620/159312608-78295d34-df70-46a7-8033-39e5639dc534.PNG)
 
-```#Importamos la libreria funciones
-import funciones
-#Definimos el main
-if __name__ == "__main__":
-    d = funciones.D(1, 2, 3)
-    print(isinstance(d, funciones.A),isinstance(d, funciones.B),isinstance(d, funciones.C))
-    print(d.a, d.b, d.c) 
-    
-class A:
-    def __init__(self, a):
-        self.a = a
-
-class B(A):
-    def __init__(self, a, b):
-        A.__init__(self, a)
-        self.b = b
-        
-class C(A):
-    def __init__(self, a, c):
-        A.__init__(self, a)
-        self.c = c
-
-class D(B, C):
-    def __init__(self, a, b, c):
-        B.__init__(self, a, b)
-        C.__init__(self, a, c)´´´
