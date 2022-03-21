@@ -15,3 +15,12 @@ def proteccion():
     if respuesta == "si":
         print("¿Cual es?")
         opciones = ["persianas", "estor", "cortinas", "mosquitera"]
+        print(opciones)
+        cuales = input()
+        if cuales not in opciones:
+            print("Error, no es una opcion valida")
+            proteccion()
+        else:
+            print("Opcion valida")
+    else:
+        raise Exception("No se ha excogido ninguna proteccion")
