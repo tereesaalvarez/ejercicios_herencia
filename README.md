@@ -18,7 +18,8 @@ Respuesta del ejercicio:
 
 El codigo es el siguiente:
 
-```#Importamos la libreria funciones
+```
+#Importamos la libreria funciones
 import funciones
 #Definimos el main
 if __name__ == "__main__":
@@ -51,7 +52,8 @@ class Derivada(Base):
     def B(self): 
         self.b = "bb" 
         super().B() 
-        print(self.b) ´´
+        print(self.b)
+        
 
 # Ejercicio 3:
 
