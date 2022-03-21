@@ -24,4 +24,14 @@ if __name__ == '__main__':
     v_o = input("Ventana de la pared oeste: ")
 
     suma = casa.superficie_acristalada()
-    print("La superficio total de las ventanas: ")
+    print("La superficio total de las ventanas: " + str(suma))
+
+    print("Introduce la medida de la superficie de las paredes cortina")
+    c_n = input("Cortina norte: ")
+    c_s = input("Cortina sur: ")
+    c_e = input("Cortina este: ")
+    c_o = input("Cortina oeste: ")
+
+    paredes_cortina = casa.superficie_acristalada(c_n, c_s, c_e, c_o)
+    suma= paredes_cortina.superficie_acristalada()
+    print("Esta es la superficie total de las paredes cortina: " +str(suma))
