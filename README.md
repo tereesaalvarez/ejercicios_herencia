@@ -78,8 +78,60 @@ El codigo es el siguiente:
 ```
 
 
-#Ejercicio 3:
+# Ejercicio 3:
 
 
 ![Herencias_3](https://user-images.githubusercontent.com/100090620/159312608-78295d34-df70-46a7-8033-39e5639dc534.PNG)
 
+El codigo es el siguiente:
+
+        class A:
+            def __init__(self, a):
+                self.a = a
+
+        class B(A):
+            def __init__(self, a, b):
+                A.__init__(self, a)
+                self.b = b
+
+        class C(A):
+            def __init__(self, a, c):
+                A.__init__(self, a)
+                self.c = c
+
+        class D(B, C):
+            def __init__(self, a, b, c):
+                B.__init__(self, a, b)
+                C.__init__(self, a, c)
+
+
+# Ejercicio 4
+
+El codigo es el siguiente:
+
+        class casa:
+            def __init__(self,ventana_n, ventana_s, ventana_e, ventana_o):
+                self.ventana_n = ventana_n
+                self.ventana_s = ventana_s
+                self.ventana_e = ventana_e
+                self.ventana_o = ventana_o
+
+            def superficie_acristalada(self):
+                suma = int(self.ventana_n) + int(self.ventana_s) + int(self.ventana_e) + int(self.ventana_o)
+                return suma 
+
+        def proteccion():
+            print("¿Quieres proteccion en la ventana? si o no?")
+            respuesta = input()
+            if respuesta == "si":
+                print("¿Cual es?")
+                opciones = ["persianas", "estor", "cortinas", "mosquitera"]
+                print(opciones)
+                cuales = input()
+                if cuales not in opciones:
+                    print("Error, no es una opcion valida")
+                    proteccion()
+                else:
+                    print("Opcion valida")
+            else:
+                raise Exception("No se ha excogido ninguna proteccion")
