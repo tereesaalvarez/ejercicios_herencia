@@ -7,7 +7,8 @@ Nuestra dirección de GitHub para este repositorio es la siguiente: https://gith
 # Ejercicio 1: 
 Herencia simple. Diagrama UML:
 
-![Diagrama_herencias](https://user-images.githubusercontent.com/100090620/159311082-250495b9-fb8a-4baa-91c6-82deac595827.jpg)
+![Herencias_1](https://user-images.githubusercontent.com/100090620/159312235-d56fced3-02bd-46e7-944a-877e7dd1e653.PNG)
+
 
 
 # Ejercicio 2:
