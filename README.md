@@ -2,4 +2,4 @@
 
 Este trabajo ha sido realizado por Teresa Álvarez, Paula Naranjo y Miguel Ángel Guerra. Hemos realizado ejercicios de herencias, tanto simples como multiples, con sus respectivos diagramas UML.
 
-Nuestra dirección de GitHub para este repositorio es la siguiente:
+Nuestra dirección de GitHub para este repositorio es la siguiente: https://github.com/tereesaalvarez/ejercicios_herencia.git
