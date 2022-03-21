@@ -47,7 +47,6 @@ class Derivada(Base):
         super().B() 
         print(self.b) 
 #El resultado es el siguiente:
-'''
 a
 b
 bb
@@ -55,9 +54,11 @@ bb
 c
 cc
 c
-'''
+´´´
+
+
 # Ejercicio 3:
-```
+
 #Importamos la libreria funciones
 import funciones
 #Definimos el main
@@ -83,7 +84,8 @@ class C(A):
 class D(B, C):
     def __init__(self, a, b, c):
         B.__init__(self, a, b)
-        C.__init__(self, a, c)´´
+        C.__init__(self, a, c)
+
 
 ![Herencias_3](https://user-images.githubusercontent.com/100090620/159312608-78295d34-df70-46a7-8033-39e5639dc534.PNG)
 
