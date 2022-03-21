@@ -2,6 +2,7 @@ from tkinter import N
 from clases.herencia_simple import *
 from clases.herencia_real import *
 from clases.herencia_diamante import *
+from clases.puzzle import *
 
 # Ejercicio 1: Herencia Simple
 
